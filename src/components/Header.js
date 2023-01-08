@@ -1,17 +1,17 @@
 import React from "react";
 import Search from "./Search";
 
-function Header() {
+function Header({toSearch}) {
   return (
-    <header>
+    <header >
       <h1>
         <span className="logo" role="img">
           ☮
         </span>
         gregslist
       </h1>
-      <Search />
-    </header>
+      <Search toSearch={toSearch}/>
+    </header >
   );
 }
 
